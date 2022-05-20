@@ -2,7 +2,6 @@
 Console.WriteLine("Hello, cool cats and kittens welcome to Michael and Emily's guessing game.");
 // Declare a variable (a number between 1-10) that is going to act as the number you will be guessing
 int num = 5;
-
 int attemptNumber = 1;
 
 while (attemptNumber <= 3)
@@ -18,7 +17,9 @@ while (attemptNumber <= 3)
     }
     else if (userNumber >= 1 && userNumber <= 10)
     {
+        int dif = Math.Abs(num - userNumber); 
         Console.WriteLine("No surprise you're WRONG!");
+        Console.WriteLine("You were " + dif + " off!");
     }
     else
     {
